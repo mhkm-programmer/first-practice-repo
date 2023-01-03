@@ -1,0 +1,35 @@
+h2{
+    color: rgb(202, 190, 20);
+}
+p{
+    color: rgba(255, 127, 80, 0.87);
+}
+
+.header{
+   height: 500px;
+   background-image: url('../image/OMYJ3xuI_male_-12_cartoon22.png'); 
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-color: rgba(0, 0, 0, 0.678);
+   background-blend-mode: multiply;
+
+}
+
+.header h1{
+    text-align: center;
+    text-decoration: underline solid yellow;
+
+}
+
+ span{
+    color: black;
+    display: inline-block;
+ }
+
+ .margin{
+    border: 5px solid blue;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    box-shadow: 20px 20px 20px 20px rgba(22, 18, 18, 0.479);
+
+ }
