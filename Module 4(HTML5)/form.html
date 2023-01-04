@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="/Style/nav.css">
+    <style>
+        label{
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="form.html">Form</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="semantic-tags.html">Semantic</a></li>
+                <li><a href="audio-video.html">Audio Video</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <h2>Welcome to Shajak Pita Polliy</h2>
+    <form>
+        <label for="name">Name
+            <input id="name" type="text" placeholder="your name">
+        </label>
+        
+        <label for="email">Email
+            <input id="email" type="email" placeholder="your Email">
+        </label>
+        
+        <label for="name">Number
+            <input id="name" type="text" placeholder="your number">
+        </label>
+        <fieldset>
+            <legend>Select One Pitha</legend>
+            <label for="chitoy">
+                <input type="radio" name="pitha" id="chitoy">
+                Chitoy
+            </label>
+            <label for="bapa">
+                <input type="radio" name="pitha" id="bapa">
+                Bapa
+            </label> 
+            <label for="dal">
+                <input type="radio" name="pitha" id="Dal">
+                Dal
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Select One or More Bokta</legend>
+            <label for="sorisha">
+                <input type="checkbox" name="bokta" id="sorisha">Sorisha
+            </label>
+            <label for="onion-bokta">
+                <input type="checkbox" name="onion-bokta" id="sorisha">Onion-bokta
+            </label>
+            <label for="shutki">
+                <input type="checkbox" name="bokta" id="shutki">Shutki
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Special Instruction</legend>
+                <textarea name="" id="" cols="30" rows="5"></textarea>
+            
+        </fieldset>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+        
+    </form>
+</body>
+</html>
