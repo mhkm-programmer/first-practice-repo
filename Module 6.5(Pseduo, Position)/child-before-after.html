@@ -4,9 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Child/Nth (after,before)</title>
+    <style>
+        li:first-child{
+            color: aqua;
+        }
+
+        li:last-child{
+            color: royalblue;
+        }
+
+        li:nth-child(2n){
+            background-color: crimson;
+        }
+
+        li:nth-child(2n+1){
+            color: olivedrab;
+        }
+        li::before{
+            color: blueviolet;
+        }
+
+        /* Pseudo Element  */
+
+        h2::before{
+            content: 'Active: ' ;
+            color: red;
+        }
+
+        h2::after, :nth-child(2n){
+            content: "!";
+            color: blue;
+        }
+
+    </style>
 </head>
 <body>
-    
+
+    <h2>Hello mr John Kabir 1</h2>
+    <h2>Hello mr John Kabir 2</h2>
+    <h2>Hello mr John Kabir 3</h2>
+    <h2>Hello mr John Kabir 4</h2>
+    <h2>Hello mr John Kabir 5</h2>
+    <h2>Hello mr John Kabir 6</h2>
+    <h2>Hello mr John Kabir 7</h2>
+    <h2>Hello mr John Kabir 8</h2>
+    <h2>Hello mr John Kabir 9</h2>
+    <h2>Hello mr John Kabir 10</h2>
+    <ul>
+        <li>Alia 11</li>
+        <li>Alia 21</li>
+        <li>Alia 31</li>
+        <li>Alia 41</li>
+        <li>Alia 51</li>
+    </ul>
 </body>
 </html>
