@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom CSS</title>
+    <style>
+        :root{
+            --primary-color: red;
+            --secondary-color: blue;
+            --bold-font-size: 100px;
+            --thin-font-size: 50px;
+            --special-padding: 50px;
+        
+        }
+
+        #heading-2{
+            color: var(--primary-color);
+        }
+
+        #heading-4{
+            color: var(--secondary-color);
+            font-size: calc(var(--thin-font-size) + 50px);
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1 class="heading" id="heading-1">lorem10-1</h1>
+    <h1 class="heading" id="heading-2">lorem10-2</h1>
+    <h1 class="heading" id="heading-3">lorem10-3</h1>
+    <h1 class="heading" id="heading-4">lorem10-4</h1>
+    <h1 class="heading" id="heading-5">lorem10-5</h1>
+</body>
+</html>
