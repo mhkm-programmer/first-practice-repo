@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Module(DOM)</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header>
+        <h1>DOM</h1>
+    </header>
+
+    <main id="main-container">
+        <section>
+            <div class="head">
+                <h1>This is first header</h1>
+            </div>
+            <div>
+                <ul class="furits truitr doudls mouts" id="f1">
+                    <li>Apple</li>
+                    <li>Orange</li>
+                    <li>Guava</li>
+                    <li>Carrot</li>
+                    <li>Papaya</li>
+                </ul>
+            </div>
+        </section>
+        <section >
+            <div id="headerText" class="textHeader">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis repellat ipsum mollitia magni placeat? Corporis 
+                </p>
+                <p> Corporis repellat ipsum mollitia magni placeat? Corporis fugiat nemo omnis consectetur modi aperiam nisi reiciendis odit quidem?
+                </p>
+                <p> fugiat nemo omnis consectetur modi aperiam nisi reiciendis odit quidem?
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <li><a href="#">Google</a></li>
+            <li><a href="#">Google</a></li>
+            <li><a href="#">Google</a></li>
+            <li><a href="#">Google</a></li>
+            <li><a href="#">Google</a></li>
+            <li><a href="#">Google</a></li>
+        </section>
+
+        <section id="apple">
+            <li>Apple-Orange</li>
+            <li>Apple-Orange</li>
+            <li>Apple-Orange</li>
+            <li>Apple-Orange</li>
+            <li>Apple-Orange</li>
+        </section>
+
+    </main>
+    <footer>
+
+
+    </footer>
+    <script src="js/dom.js"></script>
+    <script>
+        const headding = document.getElementsByTagName("h1");
+        for (const h1 of headding) {
+            // console.log(h1.innerHTML);
+        }
+
+        const liCollections = document.getElementsByTagName("li");
+        for (const li of liCollections) {
+            // console.log(li.innerText);
+        }
+
+        const furitsList = document.getElementsByClassName("furits");
+        for (const furits in furitsList) {
+            // console.log(furitsList);
+        }
+
+        const onlyApple = document.getElementById("apple");
+       
+        // console.log(jsutApple.innerText);
+
+        const textCheck = document.querySelectorAll("#headerText p");
+     
+        // console.log(textCheck);
+
+
+        const check = document.querySelector("#headerText");
+        // console.log(check);
+
+        
+
+
+    </script>
+</body>
+</html>
