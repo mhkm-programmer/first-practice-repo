@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Event</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body><main>
+
+    <section>
+        <h1 onclick="console.log('This is section Heading')">DOM Event</h1>
+        <button onclick="console.log(19)">Click Me</button> <br>
+        <button onclick="document.body.style.backgroundColor='gray'">Make Gray</button><br>
+        <button onclick="makeRed()">Make Red</button><br>
+        <button id="make-blue">make-blue</button> <br>
+        <button id="make-purple">make-purple</button> <br>
+        <button id="make-pink">make-purple</button> <br>
+        <button id="make-green">make-green</button> <br>
+        <button id="make-golden">make-golden</button> <br>
+    </section>
+    <section>
+        <h1 id="handler-title">DOM Handle</h1>
+        <button onclick="handlerOnClick()">Handle event by add onclick function</button>
+        <button id="eventBtn">handle by event listener</button> <br><br>
+    </section>
+    <section>
+        <p id="input-text-display">input text display</p>
+        <input id="input-filed" type="text">
+        <button id="btn-update">Update</button>
+    </section>
+    <section>
+        <h2 id="display-text">Here is display text</h2>
+        <input id="input-update" type="text" type="number">
+        <button id="btn-Update">Update</button>
+    </section>
+    <section>
+        <h1>Comment Here</h1>
+       <div id="display-text1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe reiciendis tenetur qui quos quisquam sint aliquid consequuntur nihil a voluptates ea alias accusantium. Ullam, voluptate voluptatem!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe reiciendis tenetur qui quos quisquam sint aliquid consequuntur nihil a voluptates ea alias accusantium. Ullam, voluptate voluptatem!</p>
+       </div>
+       <div>
+        <textarea name="text" id="input-text" cols="80" rows="5"></textarea>
+       </div>
+       <div>
+        <button id="click-post">Post</button>
+       </div>
+
+    </section>
+
+    <section>
+        <h1>More event explore</h1>
+        <input type="text" id="event-text">
+        <button id="btn-more">More event</button>
+    </section>
+</main>
+    
+    <script src="js/event.js"></script>
+    <script>
+   
+        
+
+    </script>
+</body>
+</html>
