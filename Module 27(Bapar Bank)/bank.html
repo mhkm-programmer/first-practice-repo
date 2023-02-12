@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Transaction</title>
+  </head>
+  <body class="container mx-auto">
+    <header>
+      <h1 class="text-3xl text-center font-bold my-8">
+        Let's get some <span class="text-green-600">Moooooooney</span>!!!!
+      </h1>
+    </header>
+    <main class="p-16 bg-green-200 text-center rounded-2xl">
+      <section>
+        <div
+          class="grid sm:grid-cols-1 sm:gap-y-6 md:grid-cols-3 md:gap-x-10 justify-around justify-items-center"
+        >
+          <div
+            class="bg-sky-300 text-white text-center rounded-xl px-10 py-4 text-2xl font-semibold min-w-full h-auto"
+          >
+            <h3>Deposit</h3>
+            <h2>$00</h2>
+          </div>
+
+          <div
+            class="bg-teal-600 text-white text-center rounded-xl px-10 py-4 text-2xl font-semibold min-w-full h-auto"
+          >
+            <h3>Withdrawal</h3>
+            <h2>$00</h2>
+          </div>
+
+          <div
+            class="bg-teal-900 text-white text-center rounded-xl px-10 py-4 text-2xl font-semibold min-w-full h-auto"
+          >
+            <h3>Total</h3>
+            <h2>$1240</h2>
+          </div>
+        </div>
+      </section>
+      <!-- Deposit and Withdrawal -->
+      <section class="mt-12">
+        <div
+          class="grid sm:grid-cols-1 sm:gap-y-6 md:grid-cols-2 md:gap-x-10 justify-around justify-items-center"
+        >
+          <div
+            class="bg-blue-600 text-white text-center rounded-xl px-10 py-4 text-2xl font-semibold min-w-full h-auto"
+          >
+            <h3>Please Deposit</h3>
+            <input
+              type="text"
+              id="input-deposit-field"
+              name="full-name"
+              class="my-4 w-9/12 bg-gray-100 bg-opacity-10 rounded border border-gray-300 focus:border-blue-500 focus:bg-transparent focus:ring-2 focus:ring-blue-200 text-base outline-none text-white-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              placeholder="$ Amount of Deposit"
+            />
+            <br />
+            <button
+              id="btn-deposit"
+              class="rounded-lg px-8 bg-green-600 py-2 text-center text-xl hover:bg-green-800 hover:text-white"
+              type="submit"
+            >
+              Deposit
+            </button>
+          </div>
+
+          <div
+            class="bg-blue-600 text-white text-center rounded-xl px-10 py-4 text-2xl font-semibold min-w-full h-auto"
+          >
+            <h3>Please Withdrawal</h3>
+            <input
+              type="text"
+              id="input-withdrawal-field"
+              name="full-name"
+              class="my-4 w-9/12 bg-gray-100 bg-opacity-10 rounded border border-gray-300 focus:border-blue-500 focus:bg-transparent focus:ring-2 focus:ring-blue-200 text-base outline-none text-white-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              placeholder="$ Amount of Withdrawal"
+            />
+            <br />
+            <button
+              id="btn-withdrawal"
+              class="rounded-lg px-8 bg-green-600 py-2 text-center text-xl hover:bg-green-800 hover:text-white"
+              type="submit"
+            >
+              Withdrawal
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./login.js"></script>
+    <script></script>
+  </body>
+</html>

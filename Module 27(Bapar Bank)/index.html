@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Baap Ar Bank</title>
+</head>
+<body class="container mx-auto">
+    <header>
+        <h1 class="text-3xl text-center font-bold my-8	">Welcome to your <span class="text-green-600 ">Baap Ar Bank</span></h1>
+    </header>
+
+    <main>
+        <section class=" bg-green-200 text-center rounded-2xl w-auto h-1/2 p-10 ">
+            <h1 class="text-2xl font-semibold pb-4">Please Login</h1>
+            <div>
+                <input id="e-mail" class="mb-4 rounded w-max p-1" type="email" name="username" placeholder="Your Email Address"><br>
+                <input id="e-password" class="mb-4 rounded w-max p-1" type="password" name="password" placeholder="Your Password"><br>
+                <button id="btn-submit" class="rounded-lg px-8 bg-green-600 py-2 text-center text-xl hover:bg-green-800 hover:text-white" type="submit">Login</button>
+            </div>
+        </section>
+    </main>
+    <script src="./login.js"></script>
+    <script>
+        // Step 1 => add click handler to login form
+        document.getElementById('btn-submit').addEventListener('click', function() {
+
+            //Step 2 => add click handler to email form
+            const emailField = document.getElementById('e-mail').value;
+            // const email = emailField.value;
+
+            // Step 3 => add click handler to password
+            const passwordField = document.getElementById('e-password').value;
+            // const password = passwordField.value;
+            // console.log(emailField, passwordField);
+
+            //Step 4 => add click handler to verify email address and password
+
+            if (emailField === 'mhkm@gmail.com' && passwordField === '12345') {
+                window.location.href="bank.html";
+            } else{alert("Invalid Username and Password")}
+        })
+    </script>
+</body>
+</html>
