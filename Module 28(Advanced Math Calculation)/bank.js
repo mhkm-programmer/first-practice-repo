@@ -1,4 +1,4 @@
-/*
+
 // Define deposit handler
 
     //Step 1
@@ -89,4 +89,3 @@ document.getElementById('btn-withdrawal').addEventListener('click', function() {
 
 });
 
-*/
