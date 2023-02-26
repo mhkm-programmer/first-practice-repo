@@ -16,7 +16,7 @@ const loadData1 =async (id) => {
         showMeals(data.meals);
     }
     catch(err) {
-
+        console.log(err);
     }
 }; 
 
