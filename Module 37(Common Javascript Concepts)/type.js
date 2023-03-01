@@ -1,0 +1,1 @@
+// https://www.scaler.com/topics/javascript/data-types-in-javascript/
